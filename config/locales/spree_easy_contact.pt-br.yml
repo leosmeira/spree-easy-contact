@@ -1,0 +1,72 @@
+pt-BR:
+  back_to_contacts_list: "Voltar à lista de contatos"
+  new_topic: "Adicionar um tópico"
+  go_to_topics_list: "Ir à lista de tópicos"
+  spree:
+    topics:
+      index:
+        title: "Lista de tópicos"
+    contacts:
+      notices:
+        success: "sua mensagem foi enviada com sucesso!"
+      index:
+        title: "Lista de contatos inquéritos"
+      new:
+        contact: Contate-nos
+        name: Nome
+        email: Email
+        topic: Assunto
+        order_number: "Número do pedido"
+        message: Mensagem
+        sent: Enviado em
+        submit: Enviar
+    contact_mailer:
+      notification:
+        inquiry_has_been_received: "A mensagem foi recebida"
+      details:
+        from: de
+        inquiry_type: "Tipo de inquérito"
+        message: Mensagem
+        order_number: "Número do pedido"
+      confirmation:
+        your_message_has_been_sent: "E-mail enviado com sucesso!"
+        thank_you: Obrigado
+    admin:
+      contacts:
+        index:
+          name: Nome
+          email: Email
+          topic: Assunto
+          order_number: "Número do pedido"
+          message: Mensagem
+          sent: Enviado em
+        show:
+          name: Nome
+          email: Email
+          topic: Assunto
+          order_number: "Número do pedido"
+          message: Mensagem
+          sent: Enviado em
+      topics:
+        index:
+          title: "Título"
+          email: Email
+        new:
+          new_topic: "Adicionar um tópico"
+          title: "Título"
+          email: Email
+        show:
+          title: "Título"
+          email: Email
+  activerecord:
+    attributes:
+      spree/contact:
+        name: Nome
+        email: Email
+        topic: Assunto
+        order_number: "Número do pedido"
+        message: Mensagem
+        sent: Enviado em
+      spree/topic:
+        title: "Título"
+        email: Email
