@@ -24,9 +24,9 @@
     <%= f.email_field :email, class: 'required email' %>
   </p>
 	<p>
-		<%= f.label :spree_topic_id, t(".topic") %>
+		<%= f.label :topic_id, t(".topic") %>
 		<span class="required">*</span><br />
-		<%= f.collection_select :spree_topic_id, Spree::Topic.all, :id, :title, class: 'required' %>
+		<%= f.collection_select :topic_id, Spree::Topic.all, :id, :title, class: 'required' %>
 	</p>
 	<p>
 		<%= f.label :order_number, t(".order_number") %>
