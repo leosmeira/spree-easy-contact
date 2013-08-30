@@ -3,7 +3,7 @@ module Spree
     belongs_to :topic
     attr_accessible :email, :message, :name, :spree_topic_id, :order_number
   
-    validates :name, :spree_topic_id, :message, :presence => true
+    validates :name, :topic_id, :message, :presence => true
     validates :email, :format => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
     
     after_save do
