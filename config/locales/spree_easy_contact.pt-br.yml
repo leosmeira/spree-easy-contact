@@ -10,7 +10,7 @@ pt-BR:
       notices:
         success: "sua mensagem foi enviada com sucesso!"
       index:
-        title: "Lista de contatos inquéritos"
+        title: "Lista de contatos"
       new:
         contact: Contate-nos
         name: Nome
