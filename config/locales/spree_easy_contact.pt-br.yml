@@ -32,6 +32,8 @@ pt-BR:
         your_message_has_been_sent: "E-mail enviado com sucesso!"
         thank_you: Obrigado
     admin:
+      tab:
+        contacts: Contatos
       contacts:
         index:
           name: Nome

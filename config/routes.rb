@@ -2,11 +2,11 @@ Spree::Core::Engine.routes.draw do
   # Add your extension routes here
 
   namespace :admin do 
-    resources :contacts
-    resources :topics
+    resources :contacts, :path => "contatos"
+    resources :topics, :path => "topicos"
   end
 
-  resources :contacts, :only => [:new, :create]
-  get "contact" => "contacts#new"
+  resources :contacts, :only => [:new, :create], :path => "contatos"
+  get "contato" => "contacts#new", :as => :contact
 
 end
