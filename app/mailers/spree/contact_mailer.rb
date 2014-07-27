@@ -19,7 +19,7 @@ module Spree
       
       mail(
         :to => contact.email,
-        :reply_to => site_owner_email,
+        :reply_to => contact.topic.email,
         :from => mail_from,
         :subject => "#{Spree::Config[:site_name]} : #{contact.topic.title}"
       )
@@ -27,11 +27,11 @@ module Spree
     
     private
     def mail_from
-      Spree::BaseMailer.from_address
+      Spree::Config[:mails_from]
     end
   
     def site_owner_email
-      Spree::BaseMailer.from_address
+      Spree::Config[:mail_bcc]
     end
   end
   
